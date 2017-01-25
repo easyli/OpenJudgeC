@@ -5,6 +5,6 @@ int main(void)
      double b;
      int c = sizeof(a);
      int d = sizeof(b);
-     printf("%d %d",c,d);
+     printf("%d %d\n",c,d);
      return 0;
 }
