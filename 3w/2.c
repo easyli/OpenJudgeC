@@ -1,4 +1,19 @@
+#include <stdio.h>
+#include <math.h>
 
-1. 整理你的生活,尽量避免用脑过度
-2. 以最快的速度挪出脑袋里的事物
-3. 千万不要一心多用,这样比较没有效率
+int main(void) {
+	double a, b, c;
+	scanf("%lf %lf %lf", &a, &b, &c);
+	if (b*b == 4*a*c) {
+		printf("x1=x2=%.5lf\n", (-1*b)/(2*a));
+	} else if (b*b > 4 * a * c) {
+		printf("x1=%.5lf;x2=%.5lf\n", (-1*b+sqrt(b*b-4*a*c))/(2*a), (-1*b-sqrt(b*b-4*a*c))/(2*a));
+	} else {
+		double x = -b / (2*a), y = sqrt(4*a*c-b*b) / (2*a);
+		if (x == 0) {
+			x = -x;
+		}
+		printf("x1=%.5lf+%.5lfi;x2=%.5lf-%.5lfi\n", x, y, x, y);
+	}
+	return 0;
+}

@@ -1,6 +1,6 @@
 /**
  *
- * @authors easyli (disney@yeah.net)
+ * @authors easyli
  * @date    2017-02-09 21:30:07
  * @version 1.0.0
  */
