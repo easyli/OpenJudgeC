@@ -1,15 +1,23 @@
-/**
- * 
- * @authors easyli
- * @date    2017-02-19 23:17:52
- * @version 1.0.0
- */
-
 #include <stdio.h>
 
 int main(void) {
-	
-    printf("hello");
-    return 0;
-}
 
+	int n, a, b, max = 0, tmp = 0;
+	scanf("%d", &n);
+	for (int i = 0; i < n; ++i) {
+		scanf("%d %d", &a, &b);
+		if (a>=90&&a<=140&&b>=60&&b<=90) {
+			tmp ++;
+		} else {
+			if (tmp > max) {
+				max = tmp;
+			}
+			tmp = 0;
+		}
+	}
+	if (tmp > max) {
+		max = tmp;
+	}
+	printf("%d\n", max);
+	return 0;
+}
