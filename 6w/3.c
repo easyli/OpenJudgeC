@@ -3,7 +3,7 @@ using namespace std;
 
 int bitManipulation1(int n, int m, int i) {
 // 在此处补充你的代码
-
+	return (n&(~(1<<i)) | ((m >> i)&1)<< i);
 }
 
 int main()
